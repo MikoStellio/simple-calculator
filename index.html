@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Kevin_B.Dev Calculator</title>
+</head>
+    <body>
+        <div class="calculator">
+            <div class="calculator-screen">
+                <input type="text" name="display" id="screenInput">
+            </div>
+            <div class="buttons">
+                <div class="numbers">
+                    <button onclick="addInput('7')">7</button>
+                    <button onclick="addInput('8')">8</button>
+                    <button onclick="addInput('9')">9</button>
+
+                    <button onclick="addInput('4')">4</button>
+                    <button onclick="addInput('5')">5</button>
+                    <button onclick="addInput('6')">6</button>
+
+                    <button onclick="addInput('1')">1</button>
+                    <button onclick="addInput('2')">2</button>
+                    <button onclick="addInput('3')">3</button>
+
+                    <button onclick="addNoZero('0')">0</button>
+                    <button onclick="addNoPeriod('.')">.</button>
+                    <button class="plus-minus">&plus;/&minus;</button>
+                </div>
+                <div>
+                    <div class="clear">
+                        <button class="clear" onclick="clearInput()">Clear</button>
+                    </div>
+                        <div class="operators">
+                        <button onclick="addOperators('+')">&plus;</button>
+                        <button onclick="addOperators('-')">&minus;</button>
+                        <button onclick="addOperators('/')">&divide;</button>
+                        <button onclick="addOperators('*')">&times;</button>
+                    </div>
+                    <div class="equals" onclick="equalInput()">
+                        <button class="equals">&equals;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/calculator.js"></script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+* {
+    font-family: Yu Gothic;
+    font-weight: lighter;
+    font-size: 62.5%;
+    color: white;
+    cursor: url(../img/cursor-pointer.png) 16 16, pointer;
+}
+
+body {
+    background-color: rgb(1, 10, 22);
+}
+
+/* CALCULATOR */
+.calculator {
+    position: absolute;
+    left: 38%;
+    top: 25%;
+    height: 50rem;
+    width: 45rem;
+    /*border: 1px solid rgb(134, 134, 134);
+    border-radius: 5rem;*/
+}
+
+.calculator-screen {
+    display: flex;
+    justify-content: flex-end;
+    height: 10rem;
+    width: 40rem;
+    margin: 2rem 2.3rem;
+    /*border: 1px solid rgb(134, 134, 134);*/
+}
+
+.calculator-screen input {
+    text-align: right;
+    background-color: transparent;
+    margin-right: .5rem;
+    font-size: 6rem;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+    direction: rtl;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    /*border: 1px solid red;*/
+    font-size: 8rem;
+    text-align: center;
+}
+
+.buttons button {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid rgb(134, 134, 134);
+    background-color: transparent;
+}
+
+.buttons button:hover {
+    border: 1px solid rgb(134, 134, 134);
+    background-color: rgb(134, 134, 134);
+    color: rgb(0, 217, 255);
+    transition: all ease-in-out 200ms;
+    
+}
+
+.numbers {
+    width: 24rem;
+    margin: 0 0 0 2.3rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(6rem, 1fr));
+    gap: 0;
+}
+
+.plus-minus {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.operators {
+    width: 16rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(6rem, 1fr));
+    gap: 0;
+    text-align: center;
+}
+
+.clear button {
+    width: 100%;
+}
+
+.equals button {
+    width: 100%;
+    text-align: center;
+}
+
